@@ -1,25 +1,314 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wuV-cb-SpB">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Ask-->
+        <scene sceneID="ivP-HG-nAx">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7iT-bX-fuX" customClass="contactus" customModule="MathAssistant" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="TUB-fS-XCx"/>
+                        <viewControllerLayoutGuide type="bottom" id="DVs-dr-U9F"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="xsR-si-nX7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_6132.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Daa-Gr-KsC">
+                                <rect key="frame" x="-215" y="-23" width="1200" height="817"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hi, Math Assistant is here to help!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2n-3r-Qkp">
+                                <rect key="frame" x="20" y="55" width="332" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1. Take a photo of the problem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="We1-cI-lZR">
+                                <rect key="frame" x="20" y="111" width="332" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9h-A5-L1e">
+                                <rect key="frame" x="16" y="155" width="291" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="2. Click to draft email, write subject">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SendEmail:" destination="7iT-bX-fuX" eventType="touchUpInside" id="pXU-nM-y6Z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3. Attach the photo in email, Send!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pq7-X5-z3y">
+                                <rect key="frame" x="20" y="224" width="283" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4. Venmo $1 to HSMH HSMH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blG-Dw-q6Q">
+                                <rect key="frame" x="20" y="276" width="332" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="5. If the result is not satistfied, reply" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeL-iH-xlm">
+                                <rect key="frame" x="20" y="375" width="291" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="to email with picture of scores," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0R-oK-Hx8">
+                                <rect key="frame" x="38" y="404" width="291" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="We will perform refund if needed." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5Z-Bl-rON">
+                                <rect key="frame" x="38" y="433" width="283" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="@MathAssistant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03p-bc-1hV">
+                                <rect key="frame" x="38" y="303" width="409" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="use email subject as comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blL-uu-OPm">
+                                <rect key="frame" x="38" y="327" width="297" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(c) Copyright Mathematics Assistant 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ykn-sc-Ny6">
+                                <rect key="frame" x="38" y="466" width="283" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Daa-Gr-KsC" firstAttribute="top" secondItem="xsR-si-nX7" secondAttribute="topMargin" constant="-23" id="2LJ-UI-uw9"/>
+                            <constraint firstItem="blG-Dw-q6Q" firstAttribute="leading" secondItem="xsR-si-nX7" secondAttribute="leadingMargin" id="3bW-EL-vic"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Daa-Gr-KsC" secondAttribute="bottom" constant="-194" id="8hd-7f-Upy"/>
+                            <constraint firstItem="We1-cI-lZR" firstAttribute="top" secondItem="Y2n-3r-Qkp" secondAttribute="bottom" constant="40" id="8sM-Yi-ene"/>
+                            <constraint firstItem="Pq7-X5-z3y" firstAttribute="top" secondItem="o9h-A5-L1e" secondAttribute="bottom" constant="40" id="96O-yj-rGc"/>
+                            <constraint firstItem="o9h-A5-L1e" firstAttribute="top" secondItem="We1-cI-lZR" secondAttribute="bottom" constant="40" id="99c-pi-8pI"/>
+                            <constraint firstItem="oeL-iH-xlm" firstAttribute="top" secondItem="blL-uu-OPm" secondAttribute="bottom" constant="27" id="GLP-U2-g4F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Daa-Gr-KsC" secondAttribute="trailing" constant="-405" id="GlY-mU-qPw"/>
+                            <constraint firstItem="Ykn-sc-Ny6" firstAttribute="leading" secondItem="xsR-si-nX7" secondAttribute="leadingMargin" constant="18" id="HOC-60-lyP"/>
+                            <constraint firstItem="03p-bc-1hV" firstAttribute="leading" secondItem="xsR-si-nX7" secondAttribute="leadingMargin" constant="18" id="LET-NE-0sJ"/>
+                            <constraint firstItem="Ykn-sc-Ny6" firstAttribute="top" secondItem="w5Z-Bl-rON" secondAttribute="bottom" constant="10" id="OEC-UT-ZOo"/>
+                            <constraint firstItem="oeL-iH-xlm" firstAttribute="leading" secondItem="xsR-si-nX7" secondAttribute="leadingMargin" id="SAg-ZC-RbT"/>
+                            <constraint firstItem="blL-uu-OPm" firstAttribute="leading" secondItem="xsR-si-nX7" secondAttribute="leadingMargin" constant="18" id="Ta5-Up-CIc"/>
+                            <constraint firstItem="03p-bc-1hV" firstAttribute="top" secondItem="blG-Dw-q6Q" secondAttribute="bottom" constant="6" id="W2U-0Q-wnq"/>
+                            <constraint firstItem="w5Z-Bl-rON" firstAttribute="leading" secondItem="xsR-si-nX7" secondAttribute="leadingMargin" constant="18" id="XEH-ma-W2J"/>
+                            <constraint firstItem="blL-uu-OPm" firstAttribute="top" secondItem="03p-bc-1hV" secondAttribute="bottom" constant="6" id="YB5-Nf-Cc4"/>
+                            <constraint firstItem="w5Z-Bl-rON" firstAttribute="top" secondItem="f0R-oK-Hx8" secondAttribute="bottom" constant="8" id="YUC-b8-Q2J"/>
+                            <constraint firstItem="o9h-A5-L1e" firstAttribute="leading" secondItem="xsR-si-nX7" secondAttribute="leadingMargin" id="cXZ-qi-yBi"/>
+                            <constraint firstItem="Daa-Gr-KsC" firstAttribute="leading" secondItem="xsR-si-nX7" secondAttribute="leadingMargin" constant="-235" id="gym-lA-iq7"/>
+                            <constraint firstItem="blG-Dw-q6Q" firstAttribute="top" secondItem="Pq7-X5-z3y" secondAttribute="bottom" constant="40" id="jb0-cJ-MYX"/>
+                            <constraint firstItem="Y2n-3r-Qkp" firstAttribute="top" secondItem="TUB-fS-XCx" secondAttribute="bottom" constant="35" id="kvr-Gu-wMv"/>
+                            <constraint firstItem="Pq7-X5-z3y" firstAttribute="leading" secondItem="xsR-si-nX7" secondAttribute="leadingMargin" id="nF4-wy-5aF"/>
+                            <constraint firstItem="We1-cI-lZR" firstAttribute="leading" secondItem="xsR-si-nX7" secondAttribute="leadingMargin" id="qyg-Vd-Gas"/>
+                            <constraint firstItem="f0R-oK-Hx8" firstAttribute="top" secondItem="oeL-iH-xlm" secondAttribute="bottom" constant="8" id="yco-ag-d4K"/>
+                            <constraint firstItem="f0R-oK-Hx8" firstAttribute="leading" secondItem="xsR-si-nX7" secondAttribute="leadingMargin" constant="18" id="zcM-oB-F6P"/>
+                            <constraint firstItem="Y2n-3r-Qkp" firstAttribute="leading" secondItem="xsR-si-nX7" secondAttribute="leadingMargin" id="zsr-hn-PLu"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Ask" image="Instruction_30x30.png" id="Md3-Fp-SWz"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tE0-Sp-efZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-180" y="12"/>
+        </scene>
+        <!--Instructions-->
+        <scene sceneID="QkE-Ik-44y">
+            <objects>
+                <viewController id="WM5-Qh-BsF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UFK-Ng-zk4"/>
+                        <viewControllerLayoutGuide type="bottom" id="b8E-uf-avW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kXK-Es-yt8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_6132.jpg" highlightedImage="Pie.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tgV-SQ-Ywa">
+                                <rect key="frame" x="-215" y="-23" width="1200" height="817"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome To Math Assistant!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vj-V5-cuL">
+                                <rect key="frame" x="20" y="54" width="239" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mission:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9F-i4-NbG">
+                                <rect key="frame" x="20" y="104" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="We are here to help you to solve problems." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdb-zO-yic">
+                                <rect key="frame" x="20" y="129" width="321" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="We want you to understand the problems and" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gta-Zf-55p">
+                                <rect key="frame" x="20" y="165" width="321" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="not being stressed by them." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzB-Tu-ISg">
+                                <rect key="frame" x="20" y="194" width="321" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="We help on Middle,High School/College Math," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7b-Cy-VWT">
+                                <rect key="frame" x="20" y="223" width="321" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="including algebra, geometry, calculus etc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hI2-Zr-Hol">
+                                <rect key="frame" x="20" y="252" width="316" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Contact us by following the instructions below!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zV-ci-Y3b">
+                                <rect key="frame" x="20" y="281" width="321" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Instructions:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQ1-TE-sJE">
+                                <rect key="frame" x="20" y="314" width="321" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1. Take a photo of the problem (1 question)." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waE-1J-kfY">
+                                <rect key="frame" x="20" y="343" width="321" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2. Make sure the problem is clearly presented." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpp-Rd-eGP">
+                                <rect key="frame" x="20" y="372" width="321" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3. Click Ask Tab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXj-28-uou">
+                                <rect key="frame" x="20" y="401" width="316" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4. Click Send Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2I-ue-2nW">
+                                <rect key="frame" x="20" y="432" width="321" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="5. Attach photo and send email. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xh-82-yUd">
+                                <rect key="frame" x="20" y="461" width="321" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="6. Venmo $1 to HSMH MSMH @MathAssistant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7A-TU-IM9">
+                                <rect key="frame" x="20" y="490" width="321" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="7. If answer is wrong, we refund full amount." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVt-4p-xAK">
+                                <rect key="frame" x="20" y="519" width="316" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="tgV-SQ-Ywa" secondAttribute="trailing" constant="-405" id="2kB-Ss-dsf"/>
+                            <constraint firstItem="Bpp-Rd-eGP" firstAttribute="leading" secondItem="kXK-Es-yt8" secondAttribute="leadingMargin" id="2lX-1p-NdV"/>
+                            <constraint firstItem="3zV-ci-Y3b" firstAttribute="leading" secondItem="kXK-Es-yt8" secondAttribute="leadingMargin" id="39z-hY-A8J"/>
+                            <constraint firstItem="D7b-Cy-VWT" firstAttribute="top" secondItem="gzB-Tu-ISg" secondAttribute="bottom" constant="10" id="4hV-c2-pkX"/>
+                            <constraint firstItem="Gta-Zf-55p" firstAttribute="leading" secondItem="kXK-Es-yt8" secondAttribute="leadingMargin" id="7bb-Mc-WeG"/>
+                            <constraint firstItem="pdb-zO-yic" firstAttribute="top" secondItem="K9F-i4-NbG" secondAttribute="bottom" constant="10" id="9BM-vQ-27f"/>
+                            <constraint firstItem="tgV-SQ-Ywa" firstAttribute="leading" secondItem="kXK-Es-yt8" secondAttribute="leadingMargin" constant="-235" id="Dvd-bj-uc6"/>
+                            <constraint firstItem="hI2-Zr-Hol" firstAttribute="leading" secondItem="kXK-Es-yt8" secondAttribute="leadingMargin" id="Fwg-we-Mi0"/>
+                            <constraint firstItem="b2I-ue-2nW" firstAttribute="leading" secondItem="kXK-Es-yt8" secondAttribute="leadingMargin" id="FzZ-aa-DnU"/>
+                            <constraint firstItem="gzB-Tu-ISg" firstAttribute="top" secondItem="Gta-Zf-55p" secondAttribute="bottom" constant="10" id="G6l-nJ-KV1"/>
+                            <constraint firstItem="8vj-V5-cuL" firstAttribute="leading" secondItem="kXK-Es-yt8" secondAttribute="leadingMargin" id="GWh-x1-eHb"/>
+                            <constraint firstItem="HVt-4p-xAK" firstAttribute="leading" secondItem="kXK-Es-yt8" secondAttribute="leadingMargin" id="Gl4-LZ-AFv"/>
+                            <constraint firstItem="2xh-82-yUd" firstAttribute="top" secondItem="b2I-ue-2nW" secondAttribute="bottom" constant="10" id="HHB-bR-09Y"/>
+                            <constraint firstItem="b2I-ue-2nW" firstAttribute="top" secondItem="PXj-28-uou" secondAttribute="bottom" constant="10" id="Khj-gi-HoT"/>
+                            <constraint firstItem="oQ1-TE-sJE" firstAttribute="top" secondItem="3zV-ci-Y3b" secondAttribute="bottom" constant="15" id="Klk-6a-ta9"/>
+                            <constraint firstItem="2xh-82-yUd" firstAttribute="leading" secondItem="kXK-Es-yt8" secondAttribute="leadingMargin" id="LBL-lr-IXJ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="tgV-SQ-Ywa" secondAttribute="bottom" constant="-194" id="LEn-nt-06e"/>
+                            <constraint firstItem="PXj-28-uou" firstAttribute="leading" secondItem="kXK-Es-yt8" secondAttribute="leadingMargin" id="OXQ-YX-raN"/>
+                            <constraint firstItem="3zV-ci-Y3b" firstAttribute="top" secondItem="hI2-Zr-Hol" secondAttribute="bottom" constant="10" id="Rvx-t3-Y36"/>
+                            <constraint firstItem="pdb-zO-yic" firstAttribute="leading" secondItem="kXK-Es-yt8" secondAttribute="leadingMargin" id="SBO-Eq-O9l"/>
+                            <constraint firstItem="D7b-Cy-VWT" firstAttribute="leading" secondItem="kXK-Es-yt8" secondAttribute="leadingMargin" id="W8C-Mz-RaQ"/>
+                            <constraint firstItem="gzB-Tu-ISg" firstAttribute="leading" secondItem="kXK-Es-yt8" secondAttribute="leadingMargin" id="XRY-Pg-zOC"/>
+                            <constraint firstItem="Gta-Zf-55p" firstAttribute="top" secondItem="K9F-i4-NbG" secondAttribute="bottom" constant="40" id="eSI-rD-t0z"/>
+                            <constraint firstItem="L7A-TU-IM9" firstAttribute="leading" secondItem="kXK-Es-yt8" secondAttribute="leadingMargin" id="edl-xP-Hka"/>
+                            <constraint firstItem="tgV-SQ-Ywa" firstAttribute="top" secondItem="kXK-Es-yt8" secondAttribute="topMargin" constant="-23" id="fUA-C8-4Gx"/>
+                            <constraint firstItem="waE-1J-kfY" firstAttribute="leading" secondItem="kXK-Es-yt8" secondAttribute="leadingMargin" id="fxy-q9-BcE"/>
+                            <constraint firstItem="hI2-Zr-Hol" firstAttribute="top" secondItem="D7b-Cy-VWT" secondAttribute="bottom" constant="10" id="gMW-JQ-WXd"/>
+                            <constraint firstItem="K9F-i4-NbG" firstAttribute="top" secondItem="8vj-V5-cuL" secondAttribute="bottom" constant="30" id="hQN-VX-PSa"/>
+                            <constraint firstItem="L7A-TU-IM9" firstAttribute="top" secondItem="2xh-82-yUd" secondAttribute="bottom" constant="10" id="ixw-mP-Dxs"/>
+                            <constraint firstItem="K9F-i4-NbG" firstAttribute="leading" secondItem="kXK-Es-yt8" secondAttribute="leadingMargin" id="mAB-K7-hGa"/>
+                            <constraint firstItem="Bpp-Rd-eGP" firstAttribute="top" secondItem="waE-1J-kfY" secondAttribute="bottom" constant="10" id="ncG-qm-YiT"/>
+                            <constraint firstItem="oQ1-TE-sJE" firstAttribute="leading" secondItem="kXK-Es-yt8" secondAttribute="leadingMargin" id="ngj-Sa-rf7"/>
+                            <constraint firstItem="waE-1J-kfY" firstAttribute="top" secondItem="oQ1-TE-sJE" secondAttribute="bottom" constant="10" id="stp-7r-fUD"/>
+                            <constraint firstItem="8vj-V5-cuL" firstAttribute="top" secondItem="UFK-Ng-zk4" secondAttribute="bottom" constant="35" id="xGL-00-g6h"/>
+                            <constraint firstItem="HVt-4p-xAK" firstAttribute="top" secondItem="L7A-TU-IM9" secondAttribute="bottom" constant="8" id="yRD-JD-2uf"/>
+                            <constraint firstItem="PXj-28-uou" firstAttribute="top" secondItem="Bpp-Rd-eGP" secondAttribute="bottom" constant="10" id="zuE-Ch-eMY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Instructions" image="Ask_30x30.png" id="jL5-zD-Jk9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hL9-R6-sCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-180" y="-697"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="b74-zp-DG0">
+            <objects>
+                <tabBarController id="wuV-cb-SpB" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="bxw-yb-VIJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WM5-Qh-BsF" kind="relationship" relationship="viewControllers" id="dLa-bX-V0e"/>
+                        <segue destination="7iT-bX-fuX" kind="relationship" relationship="viewControllers" id="TcT-XM-ZrA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9lw-X5-PyU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-972" y="-271"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Ask_30x30.png" width="30" height="30"/>
+        <image name="IMG_6132.jpg" width="3264" height="2448"/>
+        <image name="Instruction_30x30.png" width="30" height="30"/>
+        <image name="Pie.jpg" width="1920" height="1080"/>
+    </resources>
 </document>

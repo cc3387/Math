@@ -1,12 +1,13 @@
 //
 //  AppDelegate.swift
-//  MathAssistant
+//  HighSchoolMathHelp
 //
-//  Created by Clement Chan on 9/13/16.
+//  Created by Clement Chan on 9/10/16.
 //  Copyright © 2016 Clement Chan. All rights reserved.
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //For the purpose of Firebase authorization
+        //FIRApp.configure()
+                
         return true
     }
 
